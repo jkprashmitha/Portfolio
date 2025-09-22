@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply text-white;
+     @apply text-white p-5 text-center;
+}
+
+
+
+.glass {
+  background-color: color-mix(in oklab, white 10%, transparent);
+  border: 1px solid color-mix(in oklab, white 10%, transparent);
+  backdrop-filter: blur(12px);
+}
+:root.dark .glass { background-color: color-mix(in oklab, white 5%, transparent); }
